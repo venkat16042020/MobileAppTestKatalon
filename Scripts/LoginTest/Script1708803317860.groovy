@@ -17,17 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\Users\\venkat.kamani\\Downloads\\ApiDemos-debug.apk', true)
+Mobile.startApplication('C:\\Users\\venkat.kamani\\git\\MobileAppTestKatalon\\Data Files\\app-release.apk', true)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.TextView - Text'), 0)
+Mobile.setText(findTestObject('Object Repository/android.widget.EditText -   email or u_name'), 'aa', 0)
 
-Mobile.tap(findTestObject('Object Repository/android.widget.TextView - LogTextBox'), 0)
+Mobile.setText(findTestObject('Object Repository/android.widget.EditText - password'), 'bb', 0)
 
-Mobile.setText(findTestObject('Object Repository/android.widget.TextView'), 'kkkkkkkkkk', 0)
+Mobile.tap(findTestObject('Object Repository/android.widget.Button - Order'), 0)
 
-Mobile.getText(findTestObject('Object Repository/android.widget.TextView - TextLogTextBox'), 0)
+Mobile.verifyElementText(findTestObject('Object Repository/android.widget.TextView - Place your Order'), 'Place your Order')
 
-Mobile.getText(findTestObject('Object Repository/android.widget.TextView'), 0)
+Mobile.verifyElementExist(findTestObject('Object Repository/android.widget.Button - Close'), 0)
+
+Mobile.tap(findTestObject('Object Repository/android.widget.Button - Close'), 0)
 
 Mobile.closeApplication()
 
