@@ -21,7 +21,7 @@ Mobile.startApplication('C:\\Users\\venkat.kamani\\git\\MobileAppTestKatalon\\Da
 
 Mobile.setText(findTestObject('Object Repository/android.widget.EditText -   email or u_name'), 'aa', 0)
 
-Mobile.setText(findTestObject('Object Repository/android.widget.EditText - password'), 'bb', 0)
+Mobile.setText(findTestObject('Object Repository/android.widget.EditText - password'), 'bbbbbbbbbbbbbbbbb', 0)
 
 Mobile.tap(findTestObject('Object Repository/android.widget.Button - Order'), 0)
 
